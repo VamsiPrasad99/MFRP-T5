@@ -1,0 +1,31 @@
+<div style="margin: 10px 15px;">
+  <button type="button" mat-button style="background-color: #FB8122; color: white;" (click)="Addflight()">Add Flight</button>
+  <button mat-button routerLink="/bookedtickets" style="background-color: #FB8122; color: white;margin-left: 10px;">Tickets Booked</button>
+  <button mat-button routerLink="/adminlogin" style="background-color: #FB8122;color: white;float: right;">Logout</button><br>
+  </div>
+<table id="customers" style="margin-bottom: 15px;">
+ <tr>
+      <th *ngFor="let item of head">{{item}}</th>
+      
+    </tr>
+    <tr *ngFor="let data of flightData">
+      <td>{{data.flightID}}</td>
+      <td>{{data.flightName}}</td>
+      <td>{{data.arrival}}</td>
+      <td>{{data.departure}}</td>
+      <td>{{data.arrivalTime}}</td>
+      <td>{{data.departureTime}}</td>
+      <td>{{data.durationTime}}</td>
+      <td>{{data.price}}</td>
+      <td>
+          <i (click)="deleteData(data['flightID'])" class="fa fa-trash"
+        style="font-size: 20px; color: red;"></i>&nbsp;
+    <a routerLink="/update/{{data['_id']}}"><i class="fa fa-edit"
+            style="font-size: 20px; color: rgba(57, 16, 238, 0.952);"></i></a>
+</td>
+      
+    </tr>
+  
+  </table>
+  
+

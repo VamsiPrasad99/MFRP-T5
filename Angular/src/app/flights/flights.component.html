@@ -1,0 +1,52 @@
+<head>
+  .
+</head>
+
+<!-- <body style="background-color: #eee2d9;"> -->
+<div style="background-color: #b3e0eb;">
+  <div class="container1">
+    <div class="sb">
+      <input class="ssss" type="text" #source placeholder="Source" name="" id="">
+      <a (click)="x=source.value; source.value = destination.value; destination.value = x"><img
+          src="assets/arrow-left-right.svg" alt=""></a>
+      <input class="ssss" type="text" #destination placeholder="Destination" name="" id="">
+      <button mat-button style="background-color:#FB8122 ; color: white;margin-left: 15px;"  (click)="getFlights(source.value , destination.value)">Search Flights</button>
+    </div>
+    <!-- <mat-card-header>
+          <div mat-card-avatar class="example-header-image"></div>
+          <mat-card-title>Shiba Inu</mat-card-title>
+          <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu"> -->
+
+
+    <mat-card class="breakcrd" *ngFor="let item of sampleData | slice:0:show; let i=index">
+      <h3>FLIGHT DETAILS</h3>
+      <div class="searchdetails"routerLink="/booking/{{item['_id']}}" >
+        <!-- <h3>FLIGHT DETAILS</h3> -->
+        <div class="deta">flight ID: {{item.flightID}}
+        </div>
+        <div class="deta">Flight Name:{{item.flightName}}</div>
+        <div class="deta">Source: {{item.arrival}}</div>
+        <div class="deta">Destination:{{item.departure}}</div>
+        <div class="deta"> Departure Time:{{item.arrivalTime}}</div>
+        <div class="deta">Arrival Time:{{item.departureTime}}</div>
+        <div class="deta">Duration: {{item.durationTime}}</div>
+        <div class="deta" >Fare: {{item.price | currency}}</div>
+        
+        <!-- <p>{{date| date}}</p> -->
+      </div>
+      
+
+
+
+    </mat-card>
+    <button mat-button style="background-color:#FB8122 ; color: white; margin-bottom: 15px; margin-left: 600px;" *ngIf="show < sampleData.length " (click)="increaseShow()">Load More</button>
+    <!-- <mat-card-actions>
+          <button mat-button>LIKE</button>
+          <button mat-button>SHARE</button>
+        </mat-card-actions> -->
+  </div>
+  </div>
+
+<!-- </body> -->

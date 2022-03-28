@@ -1,0 +1,31 @@
+.example-card {
+  
+    margin-top: 10px;
+     
+  }
+  .card-body {
+    z-index: 2;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    color: black;
+  }
+  
+  /* .example-header-image {
+    height: 200px;
+    background-size: cover;
+  } */
+  mat-card-image{
+      height: 200px;
+  }
+  body{
+      background-color: whitesmoke;
+      
+  }
+  .cont{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  

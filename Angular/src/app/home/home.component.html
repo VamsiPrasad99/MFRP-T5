@@ -1,0 +1,96 @@
+<head>
+
+</head>
+
+<div>
+<div class="Services">
+  <h1 class="Service-heading">SERVICES</h1>
+  <div class="background">
+    <div class="shadow1">
+
+      <div class=" d-flex flex-row">
+
+        <mat-form-field class="from" style="border: 1px" appearance="outline">
+          <mat-label>Source</mat-label>
+          <input matInput type="text" #source placeholder="Source" (blur)="onBlur($event)" [formControl]="control"
+            [matAutocomplete]="auto">
+          <mat-icon matSuffix>flight_takeoff</mat-icon>
+        </mat-form-field>
+        <a class="tofro" (click)="x=source.value; source.value = destination.value; destination.value = x"><img
+            src="assets/arrow-left-right.svg" alt=""></a>
+        <mat-form-field class="to" appearance="outline">
+          <mat-label>Destination</mat-label>
+          <input matInput type="text" #destination placeholder="Destination" [formControl]="control"
+            [matAutocomplete]="auto">
+          <mat-icon matSuffix>flight_land</mat-icon>
+        </mat-form-field>
+
+        <mat-autocomplete #auto="matAutocomplete">
+          <mat-option *ngFor="let street of filteredPlaces | async" [value]="street">
+            {{street}}
+          </mat-option>
+        </mat-autocomplete>
+
+        <mat-form-field class="date" appearance="fill">
+          <mat-label>Choose a date</mat-label>
+          <input matInput id="date" [matDatepicker]="picker">
+          <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+          <mat-datepicker #picker startView="year" [startAt]="min"></mat-datepicker>
+
+
+        </mat-form-field>
+
+      </div>
+      <button mat-button style="background-color: #FB8122; color: white; margin-left: 500px;"
+        (click)="getFlights(source.value , destination.value)">Search Flights</button>
+    </div>
+
+
+
+
+
+  </div>
+  <br>
+</div>
+
+
+
+
+
+<mat-card class="deal shadow" *ngFor="let item of sampleData">
+  <h3>FLIGHT DETAILS</h3>
+  <div class="searchdetails">
+    
+    <div class="deta">flight ID: {{item.flightID}}
+    </div>
+    <div class="deta">Flight Name:{{item.flightName}}</div>
+    <div class="deta">Source: {{item.arrival}}</div><div class="deta">Destination:{{item.departure}}</div>
+    <div class="deta"> Departure Time:{{item.arrivalTime}}</div>
+    <div class="deta">Arrival Time:{{item.departureTime}}</div>
+    <div class="deta">Duration: {{item.durationTime}}</div>
+    <div class="deta" >Fare: {{item.price |
+      currency}}</div>
+    <div class="deta"><a href="" routerLink="/booking/{{item['_id']}}"><button mat-button style="background-color: #FB8122; color: white;">Book</button></a></div>
+    <p>{{date| date}}</p>
+  </div>
+
+</mat-card>
+
+<div>
+  <h1
+    style="text-align: center; padding-top: 20px; font-weight: bolder;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif">
+    Exclusive Deals</h1>
+  <div class="card " style="max-width: 25rem;margin-left: 13px;" routerLink="/booking/{{data['_id']}}"
+    *ngFor="let data of exclusiveDeals | slice:0:show; let i=index">
+    <img style="height: 200px; width: 300px; " class="card-img-top" [src]="data.image" alt="Card image cap">
+    <span class="card-body text-white rgba-black-light p-2">
+      {{data.arrival}}
+    </span>
+  </div>
+  <button mat-button type="button" class="btn " style="background-color: #FB8122;margin-left: 600px; color: white; "
+    *ngIf="show < exclusiveDeals.length-5" (click)="increaseShow()">Load More</button>
+
+</div>
+</div>
+
+

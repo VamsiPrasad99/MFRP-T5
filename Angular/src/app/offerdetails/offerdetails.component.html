@@ -1,0 +1,114 @@
+<div *ngFor="let details of offerdetails" >
+    <div class="rectangle11">
+        <div class="rectangle1">
+        <h2>BOOKING PERIOD</h2>
+        <h2 style="margin-top: -20px; color: #00ABE1">TILL&nbsp;{{details.validity| date}}</h2></div>
+        <div class="rectangle13">
+            
+           <h1 style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-weight: bold;">
+            {{details.offer}} <img style="height: 100px; width: 150px;" src="data:image/png;base64,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" alt="">
+        </h1></div>
+        <div class="rectangle12">
+         <h2 style="padding-top: 20px;">Promo Code</h2>
+         <h2 style="margin-top: -10px;" >{{details.offercode}}</h2>
+        </div>
+    </div>
+    <div class="rectangle2">
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                What do you get?
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                Users will get <strong>{{details.offerdetails}}</strong> on booking flights with EaseMyTrip.
+              </div>
+            </div>
+          </div>
+    </div>
+<div class="rectangle2">
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+            How do you get it?
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse show" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <ul>
+                <li>To avail discounts, users have to register/sign-up for
+                    <b><a>booking flight tickets</a></b> for their prefer destination by applying <b>coupon code: {{details.offercode}}</b>
+                </li>
+                <li>This offer is valid for limited period</li>
+                <li>The offer is valid on flight bookings</li>
+                <li>The offer is valid for bookings made on EaseMyTrip's website, Mobile site, Android &amp; iOS App
+                </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    
+</div>
+<div class="rectangle2">
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="headingThree">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+            What else do you need to know?
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse show" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <ul>
+                <li>Convenience fee will be charged as per the applicability</li>
+                <li>The offer can't be clubbed with any other promotional offers</li>
+                <li>Bookings with the valid promo codes will be only eligible for this offer</li>
+                <li>All our new and existing customers can avail this offer only once</li>
+                <li>This offer cannot be clubbed with any other offer running on EaseMyTrip</li>
+                <li>To avail this offer customer need to process his booking with registered mail id</li>
+                <li>In case of partial/full cancellation the offer stands void and discount will be rolled back before
+                    processing the refunds.</li>
+                <li>Child / infant discount, date or flight change, refund charges, weekend surcharge, black out period,
+                    travel
+                    restrictions and / or flight restriction will be also applicable as per the fare rule</li>
+                <li>Changes in flights and dates are allowed with change fees and fare difference</li>
+                <li>Changes in names are not allowed</li>
+            </ul>
+          </div>
+        </div>
+    </div>
+</div>
+   
+
+<div class="rectangle2">
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="headingFour">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+            Terms &amp; Conditions
+          </button>
+        </h2>
+        <div id="collapseFour" class="accordion-collapse collapse show" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <ul>
+                <li>In the event of any misuse or abuse of the offer, EaseMyTrip reserves the right to deny the
+                    offer to the
+                    customers.</li>
+                <li>EaseMyTrip is the sole authority for interpretation of these terms.</li>
+                <li>In addition, EaseMyTrip standard booking and privacy policy on www.EaseMyTrip.com shall apply.
+                </li>
+                <li>In the event of any dispute, Courts of New Delhi will have jurisdiction.</li>
+                <li>EaseMyTrip reserves the right, at any time, without prior notice and liability and without
+                    assigning any
+                    reason whatsoever, to add/alter/modify/change or vary all of these terms and conditions or to
+                    replace,
+                    wholly or in part, this offer by another offer, whether similar to this offer or not, or to
+                    extend or
+                    withdraw it altogether.</li>
+                <li>EaseMyTrip shall not be liable for any loss or damage arising due to force majeure.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    
+</div>
+</div>

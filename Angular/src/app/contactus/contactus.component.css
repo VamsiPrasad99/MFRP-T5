@@ -1,0 +1,39 @@
+.epanel{
+    margin: 50px 50px 0px 50px;
+    }
+    .epanel1{
+    margin: 10px 50px 0px 50px;
+    }
+    .image{
+    width: 100%;
+    height: 330px;
+    background: url("https://articleglobes.com/wp-content/uploads/2020/11/contact-banner.jpg") no-repeat center/cover;
+
+    }
+    .over{
+    margin-left: 50px;
+    font-size: x-large;
+    color: #5d1818;
+    margin-bottom: 500px;
+    }
+    .lay{
+    font-size: medium;
+    margin-left: 50px;
+    color: #5d1818;
+    }
+    .office{
+    font-size: larger;
+    }
+    .high{
+    line-height: 2em;
+    font-size: 1.1em;
+    }
+    .img{
+    background: url("https://static.goindigo.in/content/dam/indigov2/6e-website/contact-us/Footer-Contact-Us.png") no-repeat center/cover;
+
+    width: 100%;
+    height: 50%;
+    }
+    .mat-expansion-panel{
+        background-color: #F6F4F2;
+    }

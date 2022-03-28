@@ -1,0 +1,41 @@
+<mat-toolbar class="naav"  *ngIf="nav.visible">
+
+
+    <span style="color: #161F6D; font-weight: bolder;font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">Flight Booking</span>
+
+
+    <span class="example-spacer"><a href="" style="margin-left: 70px;" routerLink="home">Home</a></span>
+    <span><a href="" style="margin-left: 70px;" routerLink="flights">Flights</a></span>
+    <span> <a href="" style="margin-left: 70px;" routerLink="offers">Offers</a></span>
+    <span><a href="" style="margin-left: 70px;" routerLink="contactus">Contact us</a></span>
+    <span><a href="" style="margin-left: 70px;" routerLink="bookingdetails">Booking Details</a></span>
+    <span><a href="" style="margin-left: 70px;" routerLink="adminlogin">Admin</a></span>
+    <!-- <li class="nav-item " *ngIf="displayName == null">
+    <span><a href="" style="margin-left: 180px;" routerLink="login">Log in</a></span></li>
+    <li class="nav-item" *ngIf=" displayName != null">
+      <a class="nav-link"  data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">
+            Hi, {{displayName}}
+          </a>
+  </li>
+    <span><button class="btn btn-primary" routerLink="login" style="margin-left:  30px;">Logout</button></span> -->
+    <!-- <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+        <mat-icon>favorite</mat-icon>
+      </button>
+      <li class="nav-item" *ngIf="isAuthenticated == false && displayName == null">
+
+                        <a class="nav-link" [routerLink]="['/login']" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Account</a>
+                    </li>               
+
+                    <li class="nav-item" *ngIf="isAuthenticated == true && displayName != null">
+
+                        <a class="nav-link"  data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">
+
+                              Hi, {{displayName}}
+
+                            </a>
+
+                    </li>
+      <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+        <mat-icon>share</mat-icon>
+      </button> -->
+</mat-toolbar>

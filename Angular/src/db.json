@@ -1,0 +1,290 @@
+// Flights Data to post In postman To display flights
+
+    {
+
+    "flightID": 234,
+    "flightName": "Air Asia",
+    "arrival": "Visakhapatnam",
+    "departure": "Hyderabad",
+    "price": 3999,
+    "arrivalTime": "17:30 pm",
+    "departureTime": "19:30 pm",
+    "durationTime": "02:00 hrs",
+    "image": "https://images.unsplash.com/photo-1609854534028-b512f5246abc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dmlzYWtoYXBhdG5hbXxlbnwwfHwwfHw%3D&w=1000&q=80"
+    },
+    {
+   
+    "flightID": 235,
+    "flightName": "Air India",
+    "arrival": "Banglore",
+    "departure": "Visakhapatnam",
+    "price": 4999,
+    "arrivalTime": "05:30 AM",
+    "departureTime": "08:00 AM",
+    "durationTime": "02:00hrs",
+    "image": "https://www.karnatakatourism.org/wp-content/uploads/2021/04/bangalore-palace.jpg"
+    },
+    {
+   
+    "flightID": 236,
+    "flightName": "Indigo",
+    "arrival": "Hyderabad",
+    "departure": "Banglore",
+    "price": 4999,
+    "arrivalTime": "06:30 AM",
+    "departureTime": "08:30 AM",
+    "durationTime": "02:00hrs",
+    "image": "https://lh3.googleusercontent.com/4Cwh9SbwwNW7lHM46pl9rUYENM2MV9J2CYe3EZS9SvudMELSOcPuIrY5Rqur1tGS=s1200"
+    },
+    {
+    
+    "flightID": 237,
+    "flightName": "Indigo",
+    "arrival": "Dharamshala",
+    "departure": "Banglore",
+    "price": 7999,
+    "arrivalTime": "05:30 AM",
+    "departureTime": "08:30 AM",
+    "durationTime": "03:00hrs",
+  
+    "image": "https://media.hpcricket.org//images/photo/hpca_tadium.jpg"
+    },
+    {
+  
+    "flightID": 238,
+    "flightName": "Indigo",
+    "arrival": "Chennai",
+    "departure": "Visakhapatnam",
+    "price": 3999,
+    "arrivalTime": "05:30 AM",
+    "departureTime": "08:30 AM",
+    "durationTime": "03:00hrs",
+   
+    "image": "https://www.nationsonline.org/gallery/India/Chennai-High-Court.jpg"
+    },
+    {
+
+    "flightID": 239,
+    "flightName": "Indigo",
+    "arrival": "Mumbai",
+    "departure": "Jammu",
+    "price": 9647,
+    "arrivalTime": "11:15 PM",
+    "departureTime": "10:45 AM",
+    "durationTime": "13h 30m",
+  
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Marine_Lines_Mumbai_2021.jpg/800px-Marine_Lines_Mumbai_2021.jpg"
+    },
+    {
+   
+    "flightID": 240,
+    "flightName": "Indigo",
+    "arrival": "Kolkata",
+    "departure": "Banglore",
+    "price": 7999,
+    "arrivalTime": "05:30 AM",
+    "departureTime": "08:30 AM",
+    "durationTime": "03:00hrs",
+   
+    "image": "https://img.staticmb.com/mbcontent//images/uploads/2021/5/best-places-to-live-in-kolkata.jpg"
+    },
+    {
+   
+    "flightID": 242,
+    "flightName": "Indigo",
+    "arrival": "New Delhi",
+    "departure": "Visakhaptnam",
+    "price": 12695,
+    "arrivalTime": "22:10 ",
+    "departureTime": "04:00 ",
+    "durationTime": "6h 50m",
+   
+    "image": "https://www.sastasafar.com/img/city/delhi.jpg"
+    },
+    {
+   
+    "flightID": 243,
+    "flightName": "Indigo",
+    "arrival": "Vijayawada",
+    "departure": "Bengaluru",
+    "price": 10254,
+    "arrivalTime": "21:30 AM",
+    "departureTime": "08:15 AM",
+    "durationTime": "10h 45m",
+  
+    "image": "https://i0.wp.com/stanzaliving.wpcomstaging.com/wp-content/uploads/2021/07/Places-to-visit-in-Vijayawada.jpg?fit=1000%2C562&ssl=1"
+    },
+    {
+ 
+    "flightID": 244,
+    "flightName": "Indigo",
+    "arrival": "Rajahmundry",
+    "departure": "Chennai",
+    "price": 4952,
+    "arrivalTime": "20:30 ",
+    "departureTime": "22:10 ",
+    "durationTime": "1h 40m",
+   
+    "image": "https://www.nativeplanet.com/img/2018/09/rajahmundry-1536654721.jpg"
+    },
+    {
+    
+    "flightID": 245,
+    "flightName": "Indigo",
+    "arrival": "Kerala",
+    "departure": "Banglore",
+    "price": 5999,
+    "arrivalTime": "06:30 AM",
+    "departureTime": "08:30 AM",
+    "durationTime": "02:00hrs",
+  
+    "image": "https://www.thenewsminute.com/sites/default/files/styles/slideshow_image_size/public/Kerala_Tourism_rep_image_Facebook_08082021_1200-compressed.jpg?itok=svnzOLkk"
+    },
+    {
+  
+    "flightID": 247,
+    "flightName": "Indigo",
+    "arrival": "Lucknow",
+    "departure": "Banglore",
+    "price": 4976,
+    "arrivalTime": "05:30 AM",
+    "departureTime": "07:30 AM",
+    "durationTime": "02:00hrs",
+   
+    "image": "https://planetofhotels.com/guide/sites/default/files/styles/paragraph__live_banner__lb_image__1880bp/public/live_banner/lucknow.jpg"
+    },
+    {
+  
+    "flightID": 248,
+    "flightName": "Indigo",
+    "arrival": "Jaipur",
+    "departure": "Kuwait",
+    "price": 4567,
+    "arrivalTime": "02:30 PM",
+    "departureTime": "08:30 pm",
+    "durationTime": "06:00hrs",
+   
+    "image": "https://www.kps-photo.com/img/s/v-10/p74344827-3.jpg"
+    },
+    {
+  
+    "flightID": 249,
+    "flightName": "Indigo",
+    "arrival": "kochi",
+    "departure": "Kolkata",
+    "price": 4926,
+    "arrivalTime": "21:30 ",
+    "departureTime": "01:30",
+    "durationTime": "04:00hrs"
+  
+    },
+    {
+   
+    "flightID": 250,
+    "flightName": "Indigo",
+    "arrival": "visakhaptnam",
+    "departure": "Banglore",
+    "price": 7999,
+    "arrivalTime": "05:30 AM",
+    "departureTime": "08:30 AM",
+    "durationTime": "03:00hrs"
+   
+    },
+    {
+   
+    "flightID": 251,
+    "flightName": "Indigo",
+    "arrival": "Kozhikode",
+    "departure": "Mumbai",
+    "price": 6397,
+    "arrivalTime": "10:30 AM",
+    "departureTime": "02:35 AM",
+    "durationTime": "04:05hrs"
+  
+    },
+    {
+
+    "flightID": 255,
+    "flightName": "Indigo",
+    "arrival": "Kolkata",
+    "departure": "Hyderabad",
+    "price": 11243,
+    "arrivalTime": "04:30 AM",
+    "departureTime": "08:30 AM",
+    "durationTime": "04:00hrs"
+
+    }
+    
+
+    //offers data to display offers
+    
+        {
+        
+        "image": "https://www.getonecard.app/assets/offers/yatra_flight_onecard_offer.png",
+  
+        "offer": "Yatra Special Offer",
+        "offercode": "FLAT799",
+        "offerdetails": "Flat Rs.799 OFF",
+        "validity": "2022-03-30T18:30:00.000Z"
+        },
+        {
+      
+        "image": "https://www.thaiairways.com/static/common/imgscontent/Home/Promotion_Banner/normal_TVA_promotion_banner.jpg",
+       
+        "offer": "Thai Special Offer",
+        "offercode": "FLAT2000",
+        "offerdetails": "Flat Rs.2000 OFF",
+        "validity": "2022-05-14T18:30:00.000Z"
+        },
+        {
+       
+        "image": "https://gos3.ibcdn.com/img-1557895674.jpg",
+      
+        "offer": "Summer Special Offer",
+        "offercode": "FLAT600",
+        "offerdetails": "Flat Rs.600 OFF",
+        "validity": "2022-05-30T18:30:00.000Z"
+        },
+        {
+          
+        "image": "https://www.airindia.in/images/Air-India-CARES-new.png"
+        
+        },
+        {
+      
+        "image": "https://www.airindia.in/images/WhatsApp-No1-610x305.jpg"
+       
+        },
+        {
+      
+        "image": "https://www.airindia.in/images/dreamliner-scroll-banner.jpg"
+       
+        },
+        {
+      
+        "image": "https://www.easemytrip.com/images/offer-img/emtfirst-23apr-lp.png",
+           
+        "offer": "New User Special Offer",
+        "offercode": "FLAT1000",
+        "offerdetails": "Flat Rs.1000 OFF",
+        "validity": "2022-06-14T18:30:00.000Z"
+        },
+        {
+      
+        "image": "https://image.shutterstock.com/image-vector/travel-sale-banner-yellow-tag-260nw-1750129319.jpg",
+     
+        "offer": "Travel Special Offer",
+        "offercode": "FLAT400",
+        "offerdetails": "Flat Rs.400 OFF",
+        "validity": "2022-04-16T18:30:00.000Z"
+        },
+        {
+       
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIfkHj75-SFNaK5RfVom553V4gBkjaNIbjww&usqp=CAU",
+       
+        "offer": "November Month Special Offer",
+        "offercode": "FLAT1100",
+        "offerdetails": "Flat Rs.1100 OFF",
+        "validity": "2022-11-30T18:30:00.000Z"
+        }
+        

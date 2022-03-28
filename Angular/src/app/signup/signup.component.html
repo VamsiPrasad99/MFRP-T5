@@ -1,0 +1,40 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="text-center">
+                    <h1>Sign up</h1>
+                    <h6>Register to Log in</h6>
+                    <form [formGroup]="signupform" (ngSubmit)="Signup()" >
+                        <div class="mb-3">
+                            <mat-form-field appearance="outline">
+                              <mat-label>Full Name</mat-label>
+                              <input formControlName="fullname" type="text" matInput placeholder="Full Name">                           
+                            </mat-form-field>
+                          </div>
+                          <div class="mb-3">
+                            <mat-form-field appearance="outline">
+                              <mat-label>Phone Number</mat-label>
+                              <input formControlName="phno" type="tel" matInput placeholder="Phone Number">                           
+                            </mat-form-field>
+                          </div>
+                        <div class="mb-3">
+                        <mat-form-field appearance="outline">
+                            <mat-label>Email</mat-label>
+                            <input formControlName="email" type="email" matInput placeholder="Email">
+                          </mat-form-field>
+                        </div>
+                        <div class="mb-3">
+                          <mat-form-field appearance="outline">
+                            <mat-label>Password</mat-label>
+                            <input formControlName="password" type="password" matInput placeholder="Password">                           
+                          </mat-form-field>
+                        </div>
+                          <button mat-button color="primary">Sign up</button>
+                    </form> 
+                    <a routerLink="/login" >Already Ready Register! Log in</a>                
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

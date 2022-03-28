@@ -1,0 +1,43 @@
+<button mat-button style="background-color: #FB8122;margin: 15px; color: white;" (click)="back()" >Back</button>
+<table id="customers" style="margin-bottom: 100px;">
+    <tr>
+        <th *ngFor="let item of thead">{{item}}</th>
+    </tr>
+    <tr *ngFor="let data of ticketsdata">
+        <td>{{data.flightID}}</td>
+        <td>{{data.flightName}}</td>
+        <td>{{data.arrival}}</td>
+        <td>{{data.departure}}</td>
+        <!-- <td>{{data.arrivalTime}}</td>
+        <td>{{data.departureTime}}</td>
+        <td>{{data.durationTime}}</td>
+        <td>{{data.price}}</td> -->
+        <td>{{data.noofpassengers}}</td>
+        <td> {{data.title}}&nbsp;{{data.fname}}&nbsp;{{data.lname}}</td>
+        <td>{{data.email}}</td>
+        <td>{{data.phno}}</td>
+        <td>{{data.title1}}&nbsp;{{data.fname1}}&nbsp;{{data.lname1}}</td>
+        <td>{{data.title2}}&nbsp;{{data.fname2}}&nbsp;{{data.lname2}}</td>
+        <td>Rs.{{data.totalprice}}/-</td>
+    </tr>
+
+</table>
+
+<!-- <div class="container" *ngFor="let data of ticketsdata">
+    <div class="booking">Fight ID:<span> {{data.flightID}}</span></div>
+    <div class="booking">Flight Name:<span>{{data.flightName}}</span></div>
+    <div class="booking">Source: <span>{{data.arrival}}</span></div>
+    <div class="booking">Destination:<span>{{data.departure}}</span></div>
+    <div class="booking">Departure Time:<span>{{data.arrivalTime}}</span></div>
+    <div class="booking">Arrival Time:<span>{{data.departureTime}}</span></div>
+    <div class="booking">Duration:<span>{{data.durationTime}}</span></div>
+    <div class="booking">Fare:<span>{{data.price}}</span></div>
+    <div class="booking">No of Passengers:<span>{{data.noofpassengers}}</span></div>
+    <div class="booking">1st Passenger <br>Full Name:<span> {{data.title}}&nbsp;{{data.fname}}&nbsp;{{data.lname}}</span></div>
+    <div class="booking">Email:<span>{{data.email}}</span></div>
+    <div class="booking">Mobile Number:<span>{{data.phno}}</span></div>
+    <div class="booking">2nd Passenger <br><span>{{data.title1}}&nbsp;{{data.fname1}}&nbsp;{{data.lname1}}</span></div>
+    <div class="booking">3rd Passenger <br><span>{{data.title2}}&nbsp;{{data.fname2}}&nbsp;{{data.lname2}}</span></div>
+     <div class="booking"></div>
+  <div class="booking"></div>
+    <div class="booking">Total Fare=<span>{{data.fareprice}}</span> <br>Coupon = <span> -{{data.discountedamount.slice(4,7)}}</span> <br>Total Amount=<span>{{data.totalprice}}</span></div> -->

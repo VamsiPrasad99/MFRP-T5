@@ -1,0 +1,30 @@
+<body>
+    
+<div class="ssss">
+<div class="container">
+    <div class="row">
+     
+            <div class="card1">
+                <div class="text" >
+                    <h1>Admin</h1>
+                 
+                    <form >
+                        <div class="mb-3">
+                            <label >Email</label><br>
+                            <input type="email" #login1 class="input" matInput placeholder="Email">                    
+                        </div>
+                        <div class="mb-3">
+                         
+                           <label >Password</label><br>
+                            <input class="input" #pass type="password"  matInput placeholder="Password">                           
+                          </div>
+                          <button mat-button style="background-color: aliceblue;"  (click)="login(login1.value,pass.value)" color="primary">Log in</button>
+                    </form>
+            <a style="align-items: center;" href="" routerLink="/home">Back To Home!</a>
+          
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</body>

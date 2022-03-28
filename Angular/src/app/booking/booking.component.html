@@ -1,0 +1,249 @@
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        
+        <form [formGroup]="editservice" (ngSubmit)="update()">
+            <div class="title1">
+                <p>Ticket Booking</p>
+            </div>
+           
+            <div class="ticket-booking">
+                <div class="input-box">
+                    <span class="details">Flight ID</span>
+                    <input readonly type="text" formControlName="flightID">
+                </div>
+                <div class="input-box">
+                    <span class="details">Flight Name</span>
+                    <input  type="text"  readonly required formControlName="flightName" placeholder="Flight Name">
+                </div>
+                <div class="input-box">
+                    <span class="details">Source</span>
+                    <input type="text" readonly formControlName="arrival" placeholder="Source">
+                </div>
+                <div class="input-box">
+                    <span class="details">Destination</span>
+                    <input type="text" readonly formControlName="departure" placeholder="Destination">
+                </div>
+                <div class="input-box">
+                    <span class="details">Arrival Time</span>
+                    <input type="text" readonly formControlName="arrivalTime" placeholder="Arrival Time">
+                </div>
+                <div class="input-box">
+                    <span class="details">Departure Time</span>
+                    <input type="text" readonly formControlName="departureTime" placeholder="Departure Time">
+                </div>
+                <div class="input-box">
+                    <span class="details">Duration</span>
+                    <input type="text" readonly formControlName="durationTime" placeholder="Duration">
+                </div>
+                <div class="input-box">
+                    <span class="details">Fare</span>
+                    <input type="number" readonly formControlName="price" placeholder="Price">
+                </div>
+             
+
+                <div class="input-box">
+                    <span class="details">Passengers</span>
+                    <mat-form-field style="background-color: white;" appearance="fill">
+                        <mat-label>No of Passengers</mat-label>
+                        <mat-select formControlName="noofpassengers" (selectionChange)="doSomething($event)">
+
+                            <mat-option (change)=changeLocation($event) #passenger *ngFor="let pass of passengers"
+                                id="passengers" value="{{pass}}">{{pass}}</mat-option>
+
+                        </mat-select>
+                    </mat-form-field>
+                </div>
+
+
+                <div class="pass" *ngIf="selectedPassengers === '1'">
+
+                    <div class="input-box">
+                        <span class="details">Title</span>
+                        <mat-form-field>
+                            <mat-select formControlName="title">
+                                <mat-option *ngFor="let ting of titles" value="{{ting}}">{{ting}}</mat-option>
+                            </mat-select>
+                        </mat-form-field>
+
+                    </div>
+                    <div class="input-box">
+                        <span class="details">First & Middle Name</span>
+                        <input type="text" class=" " formControlName="fname" placeholder="First & Middle Name">
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Last Name</span>
+                        <input type="text" class=" " formControlName="lname" placeholder="Last Name">
+
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Email</span>
+                        <input type="email" required  formControlName="email" placeholder="Email Address">
+                                          
+                    </div>
+                    <div class="input-box" >
+                        <span class="details">Mobile No</span>                      
+                        <input type="tel" required id="tel" formControlName="phno" placeholder="Mobile No">
+                        
+                    </div>
+                   
+                </div>
+                <ng-container class="pass" *ngIf="selectedPassengers === '2' ">
+                  <div class="input-box">
+                      <br>
+                  </div>
+                    <div class="input-box">
+                    <h1 class="details">Passenger 1</h1>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Title</span>
+                        <mat-form-field>
+                            <mat-select formControlName="title">
+                                <mat-option *ngFor="let ting of titles" value="{{ting}}">{{ting}}</mat-option>
+                            </mat-select>
+                        </mat-form-field>
+
+                    </div>
+                    <div class="input-box">
+                        <span class="details">First & Middle Name</span>
+                        <input type="text" class=" " formControlName="fname" placeholder="First & Middle Name">
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Last Name</span>
+                        <input type="text" class=" " formControlName="lname" placeholder="Last Name">
+
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Email</span>
+                        <input type="email" formControlName="email" placeholder="Email Address">                      
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Mobile No</span>                      
+                        <input type="tel" formControlName="phno" placeholder="Mobile No">
+                    </div>
+                    <div class="input-box">
+                        <h1 class="details">Passenger 2</h1>
+                        </div>
+                    <div class="input-box">
+                        <span class="details">Title</span>
+                        <mat-form-field>
+                            <mat-select formControlName="title1">
+                                <mat-option *ngFor="let ting of titles" value="{{ting}}">{{ting}}</mat-option>
+                            </mat-select>
+                        </mat-form-field>
+
+                    </div>
+                    <div class="input-box">
+                        <span class="details">First & Middle Name</span>
+                        <input type="text" class=" " formControlName="fname1" placeholder="First & Middle Name">
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Last Name</span>
+                        <input type="text" class=" " formControlName="lname1" placeholder="Last Name">
+
+                    </div>
+                </ng-container><br>
+                <ng-container class="pass" *ngIf="selectedPassengers === '3'">
+                    <div class="input-box">
+                        <br>
+                    </div>
+                    <div class="input-box">
+                        <h1 class="details">Passenger 1</h1>
+                        </div>
+                    <div class="input-box">
+                        <span class="details">Title</span>
+                        <mat-form-field>
+                            <mat-select formControlName="title">
+                                <mat-option *ngFor="let ting of titles" value="{{ting}}">{{ting}}</mat-option>
+                            </mat-select>
+                        </mat-form-field>
+
+                    </div>
+                    <div class="input-box">
+                        <span class="details">First & Middle Name</span>
+                        <input type="text" class=" " formControlName="fname" placeholder="First & Middle Name">
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Last Name</span>
+                        <input type="text" class=" " formControlName="lname" placeholder="Last Name">
+
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Email</span>
+                        <input type="email" formControlName="email" placeholder="Email Address">                      
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Mobile No</span>                      
+                        <input type="tel" formControlName="phno" placeholder="Mobile No">
+                    </div>
+                    <div class="input-box">
+                        <h1 class="details">Passenger 2</h1>
+                        </div>
+                    <div class="input-box">
+                        <span class="details">Title</span>
+                        <mat-form-field>
+                            <mat-select formControlName="title1">
+                                <mat-option *ngFor="let ting of titles" value="{{ting}}">{{ting}}</mat-option>
+                            </mat-select>
+                        </mat-form-field>
+
+                    </div>
+                    <div class="input-box">
+                        <span class="details">First & Middle Name</span>
+                        <input type="text" class=" " formControlName="fname1" placeholder="First & Middle Name">
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Last Name</span>
+                        <input type="text" class=" " formControlName="lname1" placeholder="Last Name">
+
+                    </div>
+                    <div class="input-box">
+                        <h1 class="details">Passenger 3</h1>
+                        </div>
+                    <div class="input-box">
+                        <span class="details">Title</span>
+                        <mat-form-field>
+                            <mat-select formControlName="title2">
+                                <mat-option *ngFor="let ting of titles" value="{{ting}}">{{ting}}</mat-option>
+                            </mat-select>
+                        </mat-form-field>
+
+                    </div>
+                    <div class="input-box">
+                        <span class="details">First & Middle Name</span>
+                        <input type="text" class=" " formControlName="fname2" placeholder="First & Middle Name">
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Last Name</span>
+                        <input type="text" class=" " formControlName="lname2" placeholder="Last Name">
+
+                    </div>
+                </ng-container>
+
+        
+                <div class="input-box">
+                    <span class="details">Fare Price</span>
+                    <input type="number" ngModel="{{passenger*price}}" id="value" readonly formControlName="fareprice"
+                        value="{{passenger*price}}">
+                </div>
+                <div class="input-box">
+                    <input type="text" formControlName="discountedamount" #promo>
+                    <input type="button" value="Apply Promo" (click)="offer(promo.value)">
+                </div>
+                <div class="input-box">
+                    <span class="details">Total Amount</span>
+                    <input type="number" ngModel="{{totalprice}}" readonly formControlName="totalprice" onkeypress=""
+                        value="{{totalprice}}">
+                </div>
+                <!-- </mat-card> -->
+
+            </div>
+            <button mat-button style="background-color:  #FB8122;color: white;" type="submit">Book</button>
+        </form>
+
+    </div>
+</body>

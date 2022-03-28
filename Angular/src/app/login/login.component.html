@@ -1,0 +1,27 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="text-center" >
+                    <h1>Log in</h1>
+                    <h6>Please enter email & password</h6>
+                    <form [formGroup]="loginform" (ngSubmit)="login()" >
+                        <div class="mb-3">
+                        <mat-form-field class="login" appearance="outline">
+                            <mat-label>Email</mat-label>
+                            <input type="email" class="input" formControlName="email" matInput placeholder="Email">
+                          </mat-form-field>
+                        </div>
+                        <div class="mb-3">
+                          <mat-form-field class="login" appearance="outline">
+                            <mat-label>Password</mat-label>
+                            <input class="input" type="password" formControlName="password" matInput placeholder="Password">                           
+                          </mat-form-field></div>
+                          <button mat-button  color="primary">Log in</button>
+                    </form>
+                    <a routerLink="/signup" >New User! Sign up</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

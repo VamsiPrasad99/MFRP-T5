@@ -1,0 +1,16 @@
+<form class="container" action="" #userPost="ngForm" (ngSubmit)="onSubmit(userPost.value)">
+    <div class="search1">
+       
+        <input class="form-control" type="number" name="flightID" ngModel placeholder="Flight ID" id=""><br>
+        <input class="form-control" type="text" name="flightName" placeholder="Flight Name" ngModel id=""><br>
+        <input class="form-control" type="text" name="source" placeholder="Source" ngModel id=""><br>
+        <input class="form-control" type="text" name="destination" placeholder="Destination" ngModel id=""><br>
+        <input class="form-control" type="text" name="arrivalTime" placeholder="Departure Time" ngModel id=""><br>
+        <input class="form-control" type="text" name="departureTime" placeholder="Arrival Time" ngModel id=""><br>
+        <input class="form-control" type="text" name="durationTime" placeholder="Duration" ngModel id=""><br>
+        <input class="form-control" type="number" name="price" placeholder="Fare" ngModel id=""><br>
+       
+        <button type="submit" style="margin-left: 125px;" class="btn btn-success col-md-4">Add Data</button>
+        
+    </div>
+</form>

@@ -1,0 +1,47 @@
+.card1{
+   
+    background: rgba(0, 0, 0, 0.3);
+    min-height: 270px;
+    padding-top: 10px;
+    border-radius: 20px;
+}
+.container{
+   
+    width: 40%;
+    margin-bottom: 40px;
+  padding-top: 140px;
+  float: right;
+  margin-right: 40px;
+    
+}
+
+input{
+    width: 250px;
+    height: 40px;
+    border-radius: 5px;
+    margin-left: 120px;
+    background-color: white;
+}
+h1{
+    font-size: 25px;
+    font-weight: bold;
+    color:white;
+    text-align: center;
+}
+label{
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    margin-left: 120px;
+}
+button{
+    margin-left: 200px;
+}
+body{
+    background: url("https://img.freepik.com/free-photo/airplane-sunset_1150-8338.jpg?w=740") no-repeat center/cover;
+
+}
+a{
+    color: white;
+    padding-left: 180px;
+}
